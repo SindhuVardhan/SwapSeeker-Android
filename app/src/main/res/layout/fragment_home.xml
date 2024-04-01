@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_marginTop="?android:attr/actionBarSize"
+android:layout_marginBottom="?android:attr/actionBarSize"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+tools:context=".HomeFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content">-->
+
+<!--    </androidx.viewpager.widget.ViewPager>-->
+
+<!--           <LinearLayout-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:orientation="horizontal">-->
+
+<!--               <com.google.android.material.card.MaterialCardView-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="180dp"-->
+<!--                   android:layout_margin="20dp"-->
+<!--                   app:cardCornerRadius="20dp"-->
+<!--                   app:cardElevation="20dp">-->
+
+
+
+<!--                       <ImageView-->
+<!--                           android:layout_width="377dp"-->
+<!--                           android:layout_height="match_parent"-->
+<!--                           android:layout_margin="5dp"-->
+<!--                           android:src="@drawable/a1"-->
+<!--                           android:tag="phones" />-->
+
+<!--                   <LinearLayout-->
+<!--                       android:layout_width="match_parent"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:layout_gravity="center"-->
+<!--                       android:orientation="vertical">-->
+
+<!--                       &lt;!&ndash; Main TextView &ndash;&gt;-->
+<!--                       <TextView-->
+<!--                           android:layout_width="wrap_content"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:text="Shop Products"-->
+<!--                           android:textColor="@color/white"-->
+<!--                           android:layout_gravity="center"-->
+<!--                           android:textSize="20sp" />-->
+
+
+<!--                       <TextView-->
+<!--                           android:layout_width="wrap_content"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:text="Explore our wide range of products"-->
+<!--                           android:textColor="@color/white"-->
+<!--                           android:layout_gravity="center"-->
+<!--                           android:textSize="10sp" />-->
+<!--                   </LinearLayout>-->
+
+
+
+
+<!--               </com.google.android.material.card.MaterialCardView>-->
+<!--               <com.google.android.material.card.MaterialCardView-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="180dp"-->
+<!--                   android:layout_margin="20dp"-->
+<!--                   app:cardCornerRadius="20dp"-->
+<!--                   app:cardElevation="20dp">-->
+
+
+
+<!--                   <ImageView-->
+<!--                       android:layout_width="377dp"-->
+<!--                       android:layout_height="match_parent"-->
+<!--                       android:layout_margin="5dp"-->
+<!--                       android:src="@drawable/a2"-->
+<!--                       android:tag="phones" />-->
+
+<!--                   <LinearLayout-->
+<!--                       android:layout_width="match_parent"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:layout_gravity="center"-->
+<!--                       android:orientation="vertical">-->
+
+<!--                       &lt;!&ndash; Main TextView &ndash;&gt;-->
+<!--                       <TextView-->
+<!--                           android:layout_width="wrap_content"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:text="ADD Products"-->
+<!--                           android:textColor="@color/white"-->
+<!--                           android:layout_gravity="center"-->
+<!--                           android:textSize="20sp" />-->
+
+
+<!--                       <TextView-->
+<!--                           android:layout_width="wrap_content"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:text="Your Items, Their Stories, One Marketplace!"-->
+<!--                           android:textColor="@color/white"-->
+<!--                           android:layout_gravity="center"-->
+<!--                           android:textSize="10sp" />-->
+<!--                   </LinearLayout>-->
+
+
+
+
+<!--               </com.google.android.material.card.MaterialCardView>-->
+<!--               <com.google.android.material.card.MaterialCardView-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="180dp"-->
+<!--                   android:layout_margin="20dp"-->
+<!--                   app:cardCornerRadius="20dp"-->
+<!--                   app:cardElevation="20dp">-->
+
+
+
+<!--                   <ImageView-->
+<!--                       android:layout_width="377dp"-->
+<!--                       android:layout_height="match_parent"-->
+<!--                       android:layout_margin="5dp"-->
+<!--                       android:src="@drawable/a3"-->
+<!--                       android:tag="phones" />-->
+
+<!--                   <LinearLayout-->
+<!--                       android:layout_width="match_parent"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:layout_gravity="center"-->
+<!--                       android:orientation="vertical">-->
+
+<!--                       &lt;!&ndash; Main TextView &ndash;&gt;-->
+<!--                       <TextView-->
+<!--                           android:layout_width="wrap_content"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:text="Rent Products"-->
+<!--                           android:textColor="@color/white"-->
+<!--                           android:layout_gravity="center"-->
+<!--                           android:textSize="20sp" />-->
+
+
+<!--                       <TextView-->
+<!--                           android:layout_width="wrap_content"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:text="Experience More, Own Less - Rent with Confidence!"-->
+<!--                           android:textColor="@color/white"-->
+<!--                           android:layout_gravity="center"-->
+<!--                           android:textSize="10sp" />-->
+<!--                   </LinearLayout>-->
+
+
+
+
+<!--               </com.google.android.material.card.MaterialCardView>-->
+
+
+
+<!--           </LinearLayout>-->
+
+
+
+
+
+    <!-- Categories Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/responseTimeTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Response Time: "-->
+<!--            android:textSize="16sp"-->
+<!--            android:visibility="gone" />-->
+        <TextView
+            android:id="@+id/dataConsumptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response Time: "
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input2"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phones"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:tag="phones"
+                            android:src="@drawable/phone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Phones"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/laptops"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/laptops" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laptops"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/old"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/old" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Old Is Gold"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/electronics"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/elec" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Electronics"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/games"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/games" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Games"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cosmetics"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/cosmetics" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cosmetics"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fashion"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/fashion" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fashion"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/property"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/property" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Property"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cars"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/cars" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Auto Mobiles"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cameras"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/cam" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cameras"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Products"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allProductsRecyclerView"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?android:attr/actionBarSize" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "618752274553",
+    "project_id": "swapseeker-9bd09",
+    "storage_bucket": "swapseeker-9bd09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618752274553:android:9e0e331d6fa748f2c024a8",
+        "android_client_info": {
+          "package_name": "com.example.swapseeker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPyrP_x80JPDJuL4RFIidp_zfiRD0JAk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

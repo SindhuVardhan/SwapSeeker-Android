@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>SmartPhones</item>
+        <item>Property</item>
+        <item>AutoMobiles</item>
+        <item>HomeAppliances</item>
+        <item>Computers</item>
+        <item>Cameras</item>
+        <item>Old_is_Gold</item>
+        <item>Electronics</item>
+        <item>Toys</item>
+        <item>Gaming</item>
+        <item>Cosmetics</item>
+        <item>Fashion</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+    <string-array name="sell_rent_array">
+        <item>Sell</item>
+        <item>Rent</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>
+

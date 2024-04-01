@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="?android:attr/actionBarSize"
+    tools:context=".HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <!-- Sell Products Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell Products"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Product 1 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/SellCard"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Product Image -->
+                            <ImageView
+                                android:id="@+id/sellImg"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Product Image"/>
+
+                            <!-- Product Name -->
+                            <TextView
+                                android:id="@+id/sell_product_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:padding="8dp"/>
+
+                            <!-- Product Price -->
+                            <TextView
+                                android:id="@+id/sell_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="8dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!-- Repeat the above block for other sell products -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <!-- Rental Products Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rental Products"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Product 1 CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/RentCard"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Product Image -->
+                            <ImageView
+                                android:id="@+id/rentImg"
+                                android:layout_width="match_parent"
+                                android:layout_height="152dp"
+                                android:contentDescription="Product Image"
+                                android:scaleType="centerCrop" />
+
+                            <!-- Product Name -->
+                            <TextView
+                                android:id="@+id/rent_product_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:padding="8dp"
+                                tools:ignore="DuplicateIds" />
+
+                            <!-- Product Price -->
+                            <TextView
+                                android:id="@+id/rent_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="8dp"
+                                tools:ignore="DuplicateIds" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <!-- Repeat the above block for other sell products -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:layout_marginBottom="?android:attr/actionBarSize"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

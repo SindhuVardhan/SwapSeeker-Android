@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_gravity="center_horizontal"
+android:background="@drawable/custom_input"
+android:layout_margin="10dp"
+android:layout_marginTop="20dp"
+android:outlineSpotShadowColor="@color/primary"
+android:outlineAmbientShadowColor="@color/primary"
+tools:context=".HomeFragment">
+
+
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/sellImg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Product Image"/>
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/sell_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/sell_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="8dp"/>
+</LinearLayout>  <!--card_sell_product.xml-->
+
